@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-transform: uppercase;
+        }
+        ul{
+            text-align: center;
+            list-style-type: none;
+        }
+        li{
+            display: inline;
+            margin: 10px;
+            padding: 5px;
+        }
+        a{
+            text-decoration: none;
+        }
+        section{
+            display: flex;
+        }
+        article{
+            height: 350px;
+            padding: 10px;
+        }
+        #marticle{
+            width: 400px;
+            border-top: purple;
+            border-top-style: double;
+            border-top-width: 3px;
+
+            border-left-width:15px;
+            border-left: green;
+            border-left-style: dotted;
+
+            border-right-style: ridge;
+            border-right-color: greenyellow;
+            border-right-width: 10px;
+
+            border-bottom-width: 10px;
+            border-bottom: blue;
+            border-bottom-style: groove;
+        }
+        figure{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        figure img{
+            border: 2px solid red;
+            padding: 4px;
+        }
+        figure img:hover{
+            box-shadow: 0 0 2px 2px rgba(0, 100, 200, 50);
+        }
+        .anime-trans{
+            display: flex;
+            justify-content: space-around;
+            height: 400px;
+            background-color: aliceblue;
+          
+        }
+        .trans{
+            height: 100%;
+           padding: 5px;
+           background-color: skyblue;
+           transition: background-color 2s;
+           color: aliceblue;
+            font-size: 14px;
+
+        }
+        .trans:hover{
+            height: 100%;
+           padding: 5px;
+           background-color: rgb(2, 66, 66);
+           transition: background-color 2s;
+
+        }
+        .my-anime{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            text-align: center;
+
+        }
+        @keyframes example {
+            0% {background-color: red}
+            25% {background-color: blue}
+            50% {background-color: yellow}
+            75% {background-color: purple}
+            100% {background-color: orangered};
+        }
+    
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./download-1.jpg" alt="" width="50" height="50">
+        <h1>A marks limited</h1>
+    </header>
+    <nav>
+        <ul style="background-color: blue;">
+        <li><img src="download.jpg" alt=""  width="20" height="20"><a href="">Home</a></li>
+        <li><img src="./download-4.jpg" alt=""  width="20" height="20"><a href="">News</a></li>
+        <li><img src="./download-3.jpg" alt=""  width="20" height="20"><a href="">Contact</a></li>
+        <li><img src="./download-2.jpg" alt=""  width="20" height="20"><a href="">About</a></li>
+    </ul>
+    </nav>
+    <section>
+    <article>
+        <h2 style="font-style: italic; color: red; text-decoration: underline;">General Contact Information</h2>
+        <pre>Landline: 91 80 1056365
+Business: shopping enquiries
+Toll Free: 1300 555 32323
+Toll Free: 1300 525 12366
+Landline: 91 80 10563650
+Fax: 91 80 10563650
+Email:respond@amarks.com
+www.amarks.com</pre>
+       
+    </article>
+
+    <article  id="marticle">
+        <h2 style="font-style: italic; color: red; text-decoration: underline;">Some title</h2>
+       
+        <p><span style="color: purple; font-style: italic;">illum itaque</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio ipsum alias reprehenderit illum itaque perspiciatis vitae. Dignissimos, quos porro.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione at, consequatur mollitia veritatis dolorem numquam? Nostrum laborum aperiam reprehenderit nulla?</p>
+        <h2  style="font-style: italic; color: red; text-decoration: underline;">Another title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+    </article>
+
+    <article>
+        <h2 style="font-style: italic; color: red; text-decoration: underline;">Some title</h2>
+        <p>  perspiciatis vitae. Dignissimos, quos porro.</p>
+        <p>Lorem ipsu adipisicing elit. Laudantium, facere?</p>
+        <h2  style="font-style: italic; color: red; text-decoration: underline;">Another title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+
+        
+
+
+    </article>
+</section>
+    <div>
+        <figure>
+            <a href="./download-1.jpg" target="_blank"><img src="./download-1.jpg" alt=""></a>
+            <a href="./download-1.jpg" target="_blank"><img src="./download-1.jpg" alt=""></a>
+            <a href="./download-1.jpg" target="_blank"><img src="./download-1.jpg" alt=""></a>
+        </figure>
+    </div>
+    <div class="anime-trans">
+        <div class="trans">
+            <h1>
+                Hello!
+            </h1>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ea assumenda amet!</h3>
+        </div>
+        <div class="anime">
+           <div class="my-anime">
+               HELLO WORLD!
+        </div>
+    </div>
+</body>
+</html>

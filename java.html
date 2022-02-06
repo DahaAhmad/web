@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Installment Calculator</title>
+    <link rel="stylesheet" href="java.css">
+</head>
+<body style="background-color: bisque;">
+    <h1>Online EMI Calculator for Cars</h1>
+    <img src="/download-3.jpg" alt="" width="288" height="192">
+    <nav>
+        <hr>
+        <ul id="nav">
+            <li><a href="#">New Cars</a></li>
+            <li><a href="#">Used Cars Us</a></li>
+            <li><a href="#">Sell Cars</a></li>
+            <li><a href="#">Accessories</a></li>
+        </ul>
+    </nav>
+    <h4>EMI Calculator for Cars</h4>
+    <form method="POST" action="">
+        <table>
+            <tr>
+                <td>Principal ($):</td>
+                <td><input type="text" id="txtPrincipal" value="0"></td>
+            </tr>
+            <tr>
+                <td>Period (In Months):</td>
+                <td><input type="text" id="txtPeriod" value="0"></td>
+            </tr>
+            <tr>
+                <td>Rate of interest (%)</td>
+                <td><input type="text" id="txtInterest" value="0"></td>
+            </tr>
+            <tr>
+                <td>Monthly Installment ($)</td>
+                <td><input type="text " id="txtInstallment" readonly="readonly" style="color: red;"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="right">
+                <input type="button" id="btnCalculate" value="Calculate" 
+                onclick="var principal = parseFloat(txtPrincipal.value);
+                var period = parseInt (txtPeriod.value);
+                var interest = parseFloat (txtInterest.value);
+                var interestAmount = eval(principal * interest /100);
+                var installment = eval((principal + interestAmount) / period);
+                txtInstallment.value = installment;
+                "/>
+                <input type="reset" id="btnReset" value="Reset">
+            </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
